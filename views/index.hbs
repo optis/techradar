@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Techradar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="/style.css" type="text/css"/>
+    </head>
+    <body>
+        <div class="wr">
+            <div class="wrapper">
+                <div class="section">
+                    <div class="circle circle-three">
+                        <div class="circle circle-two">
+                            <div class="circle circle-one"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="layer">
+                        {{#each data.one}}
+                         <div class="item item-one{{#if this.highlight}} highlight{{/if}}">
+                             <span>{{this.name}}</span>
+                         </div>
+                        {{/each}}
+                    </div>
+                    <div class="layer">
+                        {{#each data.two}}
+                            <div class="item item-two{{#if this.highlight}} highlight{{/if}}">
+                                <div class="item item-one">
+                                    <span>{{this.name}}</span>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                    <div class="layer">
+                        {{#each data.three}}
+                            <div class="item item-three">
+                                <div class="item item-three{{#if this.highlight}} highlight{{/if}}">
+                                    <span>{{this.name}}</span>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

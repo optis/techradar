@@ -1,0 +1,12 @@
+{
+  "name": "techradar",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "winston": "^2.4.0"
+  }
+}
